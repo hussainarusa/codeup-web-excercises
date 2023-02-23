@@ -84,7 +84,8 @@ const myName = `Arusa`
   //  * Use prompt and alert in combination with your calculateTip function to
   //  * prompt the user for the bill total and a percentage they would like to tip,
   //  * then display the dollar amount they should tip
-  prompt("amountToTip", + "billTotalNum");
+
+     prompt("amountToTip", + "billtotalNum");
 
   //
   // /**
