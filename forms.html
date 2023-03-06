@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+    <style>
+        .submit{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+<form method="POST" action="https://request-inspector.glitch.me/">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Enter Email Here">
+    <br>
+    <br>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter Password Here">
+</div>
+
+<div>
+    <h4> How did you hear about us?</h4>
+    <label for="billboard">Billboard:</label>
+    <input type="checkbox" name="how" value="billboard" id="billboard"><br>
+    <label for="radio advertisement">Radio Advertisement:</label>
+    <input type="checkbox" name="how" value="radio advertisement" id="radio advertisement"><br>
+    <label for="internet advertisement">Internet Advertisement:</label>
+    <input type="checkbox" name="how" value="internet advertisement" id="internet advertisement"><br>
+    <label for="other">Other:</label>
+    <input type="checkbox" name="other" value="other" id="other"><br>
+<!--    Change these inputs so that multiple answers are allowed to be selected.-->
+</div>
+<div>
+    <h4> What browser are you using?</h4>
+    <select name="browser" id="browser">
+        <option value="Safari">Safari</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Firefox">Firefox</option>
+    </select>
+</div>
+
+<div class="submit">
+    <input type="submit" value="Submit Form">
+</div>
+
+</body>
+</html>
