@@ -1,22 +1,28 @@
-// $(document).ready(function(){
-//     $(`invisible`).click(function(event){
-//         event.preventDefault();
-//         $(`invisible`).toggleClass(`visible`)
-//     });
-// })
-// NAUUUUR!!!
-// let invisible = $(`dt`);
-// invisible.on(`click`, function(){
-//     $(invisible).toggleClass(`invisible`)
+
+// ATTRIBUTE METHODS
+
+
+// let $question = $('dt');
+// let $answer = $('dd');
+//
+// $('button').click('toggle', function (){
+//     $answer.toggleClass('invisible');
+// });
+//
+// $question.click('toggle', function (){
+//     $(this).toggleClass('highlight');
 // });
 
-let $question = $('dt');
-let $answer = $('dd');
 
-$('button').click('toggle', function (){
-    $answer.toggleClass('invisible');
-});
+//  TRAVERSING
 
-$question.click('toggle', function (){
-    $(this).toggleClass('highlight');
-});
+$(`button`).click(function(){
+    $(this).children(`li`).css(`highlight`, `yellow`)
+})
+
+
+$('.h3').next().css('font-weight', 'bold');
+
+
+$(`.ul`).children().css(`color`, `blue`);
+
