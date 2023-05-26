@@ -37,9 +37,21 @@
 // })();
 
 
-function fullName (firstName,lastName){
-   alert (`firstName +""+ lastName`)
-}
-fullName ("Arusa", "Hussain");
+// function fullName (firstName,lastName){
+//    alert (`firstName +""+ lastName`)
+// }
+// fullName ("Arusa", "Hussain");
 
+
+
+
+function convertAddressToObject(address){
+   const indexOfSpace = address.indexOf('')
+    const streetNumber =address.indexOf()
+
+}
+
+const addr1= '851 Big Sky Dr';
+const addr2= '1234 Rainbow Ln';
+const addr3= '786 Camaron Str';
 

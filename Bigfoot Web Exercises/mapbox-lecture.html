@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/keys.js"></script>
+      <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+      <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet'/>
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/resets.css">
+        <link rel="stylesheet" href="css/mapbox-lecture.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <h1>My Favorite Restaurants</h1>
+            <div id='map' style='width: 400px; height: 300px;'></div>
+
+                    <button id="setMarkerButton">Set Marker</button>
+                </form>
+            </div>
+            <div class="row">
+                <div class="column text-center justify-center align-center">
+                    <button id="hideMarkers">Hide Markers</button>
+                        </div>
+                      </div>
+                 </div>
+    <script src="js/mapbox-utils.js"></script>
+    <script>
+        mapboxgl.accessToken = MAPBOX_API_TOKEN;
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/satellite-streets-v12', // style URL
+            center: [-122.335167, 47.608013], // starting position [lng, lat]
+            zoom: 9, // starting zoom
+        });
+        const favMarker = new mapboxgl.Marker()
+            .setLngLat([-122.313560,47.658501])
+            .addTo(map);
+        const favPopup = new mapboxgl.Popup()
+            .setHTML(`<p class="popup">Cafe On Ave</p>`);
+        favMarker.setPopup(favPopup);
+        map.setZoom(9);
+    </script>
+    <script src="js/mapbox.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="container">
+        <div class="column">
+            <div class="row">
+
+                <h1>Blog</h1>
+
+                <div id="posts">
+
+                </div>
+        </div>
+    </div>
+</div>
+
+    <script src="js/jquery-3.6.4.js"></script>
+    <script>
+     let blog= fetch(`data/blog.json`)
+         .then(response => response.json())
+         .then(data=>{
+             console.table(data)
+             return data
+         });
+
+     $.ajax(`data/blog.json`).done(function(got){
+         console.log(got);
+         got.forEach(function(content){
+             console.log(content);
+             $("#posts").append(blog)
+
+
+    </script>
+
+
+
+</body>
+</html>

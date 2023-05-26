@@ -1,0 +1,42 @@
+/*h1 {*/
+/*    color: red;*/
+
+/*}*/
+
+/*.fancy-header {*/
+/*    color: purple; !* single line comment *!*/
+/*    text-decoration: underline;*/
+/*}*/
+*{
+    box-sizing:border-box;
+
+}
+body {
+    margin: 0px;
+    padding: 20px;
+
+}
+
+
+ h1, h2{
+     font-family: sans-serif;
+
+ }
+.header1{
+    font-size: 50px;
+    margin-bottom: 0px;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+header p {
+    color:grey;
+}
+header{
+    background-color: lightblue;
+    padding: 20px;
+    border-bottom: 1px solid #000000 ;
+}
