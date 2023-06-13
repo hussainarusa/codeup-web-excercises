@@ -1,0 +1,158 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+:root{
+    --primary: #560808;
+}
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 50%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary);
+}
+
+ .fancy-header{
+    color: var(--primary);
+    text-align: center;
+     background-image: url("../img/stars.jpeg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     border-radius: 30px;
+     padding: 15px;
+     margin: 20px;
+     box-shadow: 1px 6px 5px #084464;
+     letter-spacing: 3px;
+
+
+}
+ .fancy-header p{
+     color: black;
+     padding: unset;
+     margin: unset;
+
+ }
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 15px 5px 5px 10px;
+    color: var(--primary);
+
+}
+
+.main-section > div {
+    margin-right: 20px;
+}
+
+.main-section > div:last-child {
+    margin-right: 0;
+}
+
+.main-section h3{
+    text-align: center;
+
+}
+
+body{
+    background-color: #b8d3ea;
+}
+
+
+table, th, td{
+    border: 1px solid;
+    font-size: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 25px;
+    background-color: #084464;
+    color: #8fc3e9;
+
+}
+
+.company-v{
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 5px 5px #084464;
+    border-radius: 30px;
+    background-color: #8fc3e9;
+    margin: 20px;
+    padding: 5px;
+    letter-spacing: 3px;
+
+}
+
+h1.fancy-header{
+    box-shadow: unset;
+
+}
+
+.table-section{
+   display: flex;
+    justify-content: center;
+    flex-direction: column ;
+}
+
+.table-section h2 {
+    text-align: center;
+    background-color: #8fc3e9;
+    box-shadow: 10px 5px 5px #084464;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 5px;
+    letter-spacing: 3px;
+}
+
+.photos-wrapper{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+
+}
+.photos-wrapper img{
+    transition: all ease 1s;
+    filter: grayscale(1);
+}
+
+.photos-wrapper img:hover{
+    filter: grayscale(0);
+}
+
+.table-section table th{
+    background-color: var(--primary);
+    color: #8fc3e9;
+    border-radius: 10px;
+}
+.table-section table td{
+    border-radius: 10px;
+}
+a:visited {
+    color: #ffffff;
+}
+
+/*ul {*/
+/*    list-style-type: star;*/
+/*}*/
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ul li:before
+{
+    content: '\2605';
+    margin-right: 2px;
+}
