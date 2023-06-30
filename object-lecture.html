@@ -1,10 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Object</title>
 </head>
 <body>
-$END$
+<script>
+
+  // const arusa = {
+  //   favColor: "Green",
+  //   food: "Biryani",
+  //   age: "23",
+  //   pet: "Cat",
+  //   hobby: "Ceramics",
+  //   career: "Software Developer"
+  // };
+  //
+  //
+  // console.log(arusa.favColor);
+  // console.log(arusa.food);
+  // console.log(arusa.age);
+  // console.log(arusa.pet);
+
+  // object with an array inside
+  const cars= [
+      {
+          make: "toyota",
+          model:"camry",
+          features: ["power steering", "gps", "manual"],
+          owner:{
+              name: "JAne DOe",
+              age: 30
+          }
+      },
+      {
+          make: "toyota",
+          model:"camry",
+          features: ["power steering", "gps", "manual"],
+      }
+
+  ]
+
+console.log(cars.make)
+
+  const car = {
+      make: "Ford",
+      model: "F-250",
+      color: "Red"
+  };
+
+  console.log(car.model);
+  console.log(car.color);
+  console.log(car["make"]);
+
+  // Array of Objects
+
+  const cars = [
+      {
+          make: "Toyota",
+          model: "Camry",
+          features: ["Automatic Windows", "Bluetooth Connectivity", "GPS Navigation"],
+          owner: {
+              name: "Jane Doe",
+              age: 30,
+              sayMyName: function (){
+                  console.log(`${this.name} said hi`)
+              }
+          },
+          honk: function (){
+              console.log(`${this.model} honked..`)
+          }
+      },
+      {
+          make: "Honda",
+          model: "Accord",
+          features: ["Automatic Windows", "Great Gas Mileage", "AM/FM Radio"],
+          owner: {
+              name: "John Doe",
+              age: 31
+          },
+          honk: function (){
+              console.log(`${this.model} honked..`)
+          }
+      }
+  ]
+
+
+// this is how to loop through, its a nested loop that we have and it can be used to find
+
+
+  for(const car of cars){
+      const features = car.features;
+      for(const feature of features){
+          console.log(feature)
+      }
+  }
+
+
+
+
+
+
+
+</script>
+
+
+
 </body>
 </html>

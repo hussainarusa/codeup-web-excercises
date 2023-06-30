@@ -1,10 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Exercise</title>
+  <link rel="stylesheet" href="css/resets.css">
+  <link rel="stylesheet" href="css/layout.css">
 </head>
+<style>
+
+  h1{
+    text-align: center;
+  }
+  .column{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: cornflowerblue;
+  }
+
+  @media screen and (min-width: 768px){
+    .column{
+
+      background-color: darkseagreen;
+
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .column{
+
+      background-color: hotpink;
+
+    }
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    .column{
+
+      background-color: mediumpurple;
+
+    }
+
+  }
+
+
+</style>
+
+
+
 <body>
-$END$
+  <div class="page-wrapper">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="column">
+
+          <h1 >Hello World</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

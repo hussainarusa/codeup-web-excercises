@@ -111,3 +111,9 @@ section.container.features {
 .hero-text {
     position: relative;
 }
+
+.row.hero{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}

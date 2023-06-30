@@ -67,7 +67,8 @@
 
         let discountedAmount= originalAmount - discount
 
-        console.log(`Shopper ${i + 1}: Name: ${shoppers[i].name}  Original Amount = ${originalAmount}  Discount Amount = ${discount}`)
+        console.log(`Shopper ${i + 1}: Name: ${shoppers[i].name}  Original Amount = ${originalAmount.toFixed(2)} 
+         Discount Amount = ${discount.toFixed(2)}`)
 
 
     /** TODO:
@@ -169,6 +170,7 @@
      */
 
         function createABook(title, author){
+            return title +  author;
 
         }
 

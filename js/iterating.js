@@ -46,8 +46,8 @@
      * Refactor your above code to use a `forEach` loop
      */
 
-    names.forEach((i)=>{
-        console.log(i)
+    names.forEach((names)=>{
+        console.log(names)
     })
 
 
@@ -81,7 +81,7 @@
 
 
     function lastArrayItem(array){
-        return array.length - 0
+        return array(array.length - 0)
     }
 
     console.log(lastArrayItem(numbArray));

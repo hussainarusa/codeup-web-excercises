@@ -1,0 +1,41 @@
+.container-fluid.ah-hero{
+    min-height: 30vh;
+    background-image: url('../img/pizza.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+.ah-search{
+    padding-right: 47em;
+}
+.form-header{
+    padding-left: 2em;
+
+}
+
+
+.ah-tossed{
+    margin: 2rem 0;
+}
+
+
+#text{
+    text-align: start;
+}
+
+
+div.btn-group{
+    width: 100%;
+}
+
+.btn-secondary {
+    --bs-btn-color: #040303;
+    --bs-btn-bg: #ffffff;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: #0b6efd;
+}
+
+
+.turn-page{
+    margin-bottom: 2em;
+}
