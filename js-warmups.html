@@ -314,34 +314,34 @@
     //
     //     Example:
 
-
-    const users = [
-
-        {
-            username: 'fred123',
-            password: 'letmein',
-            email: 'fred123@email.com',
-            isAdmin: true
-        },
-        {
-            username: 'cindy123',
-            password: 'hello123',
-            email: 'cindy123@email.com',
-            isAdmin: false
-        },
-        {
-            username: 'kathy123',
-            password: 'letmein',
-            email: 'kathy123@email.com',
-            isAdmin: true
-        },
-        {
-            username: 'kyle123',
-            password: 'letmein',
-            email: 'kyle123@email.com',
-            isAdmin: false
-        }
-    ]
+    //
+    // const users = [
+    //
+    //     {
+    //         username: 'fred123',
+    //         password: 'letmein',
+    //         email: 'fred123@email.com',
+    //         isAdmin: true
+    //     },
+    //     {
+    //         username: 'cindy123',
+    //         password: 'hello123',
+    //         email: 'cindy123@email.com',
+    //         isAdmin: false
+    //     },
+    //     {
+    //         username: 'kathy123',
+    //         password: 'letmein',
+    //         email: 'kathy123@email.com',
+    //         isAdmin: true
+    //     },
+    //     {
+    //         username: 'kyle123',
+    //         password: 'letmein',
+    //         email: 'kyle123@email.com',
+    //         isAdmin: false
+    //     }
+    // ]
 
 
     /*
@@ -386,42 +386,42 @@
     // The function should return true if the neighborhood object is desireable and false otherwise.
 
 // example data...
-
-        const neighborhood1 = {
-        neighborhood: "Lovely Estates",
-        medianHomePrice: 280000,
-        pool: true,
-        tennis: false,
-        crimeRate: "low",
-        schools: 22
-    };
-
-    const neighborhood2 = {
-        neighborhood: "Luminous Estates",
-        medianHomePrice: 270000,
-        pool: true,
-        tennis: false,
-        crimeRate: "high",
-        schools: 24
-    }
-
-    const neighborhood3 = {
-        neighborhood: "Oak Mountain",
-        medianHomePrice: 290000,
-        pool: false,
-        tennis: false,
-        crimeRate: "low",
-        schools: 24
-    }
-
-    const neighborhood4 = {
-        neighborhood: "Ginormous Acres",
-        medianHomePrice: 350000,
-        pool: true,
-        tennis: true,
-        crimeRate: "low",
-        schools: 27
-    }
+//
+//         const neighborhood1 = {
+//         neighborhood: "Lovely Estates",
+//         medianHomePrice: 280000,
+//         pool: true,
+//         tennis: false,
+//         crimeRate: "low",
+//         schools: 22
+//     };
+//
+//     const neighborhood2 = {
+//         neighborhood: "Luminous Estates",
+//         medianHomePrice: 270000,
+//         pool: true,
+//         tennis: false,
+//         crimeRate: "high",
+//         schools: 24
+//     }
+//
+//     const neighborhood3 = {
+//         neighborhood: "Oak Mountain",
+//         medianHomePrice: 290000,
+//         pool: false,
+//         tennis: false,
+//         crimeRate: "low",
+//         schools: 24
+//     }
+//
+//     const neighborhood4 = {
+//         neighborhood: "Ginormous Acres",
+//         medianHomePrice: 350000,
+//         pool: true,
+//         tennis: true,
+//         crimeRate: "low",
+//         schools: 27
+//     }
 
 
 
@@ -465,30 +465,81 @@
     // Write a function, returnLargestStudentCount, that takes in an array of classes returns the number of students in the largest class.
     // Assume at least one class object will be present in the input array with students property set to a valid positive integer.
 
-        let classes = [
-        {class: "6th grade history", students: 18},
-        {class: "7th grade history", students: 20},
-        {class: "8th grade history", students: 22},
-        {class: "4th grade history", students: 30},
-        {class: "10th grade history", students: 25}
-    ];
+    //     let classes = [
+    //     {class: "6th grade history", students: 18},
+    //     {class: "7th grade history", students: 20},
+    //     {class: "8th grade history", students: 22},
+    //     {class: "4th grade history", students: 30},
+    //     {class: "10th grade history", students: 25}
+    // ];
+    //
+    //
+    // function returnLargestStudentCount(classes) {
+    //     let largestCount = 0; // cant be declared inside of the loop because we need to work with the variable after thr loop is done
+    //
+    //     for (let i = 0; i < classes.length; i++) {
+    //         const currentClass = classes[i];
+    //
+    //         if (currentClass.students > largestCount) {
+    //             largestCount = currentClass.students;
+    //         }
+    //     }
+    //
+    //     return largestCount;
+    // }
+    //
+    // console.log(returnLargestStudentCount(classes)); // Output: 30
 
 
-    function returnLargestStudentCount(classes) {
-        let largestCount = 0; // cant be declared inside of the loop because we need to work with the variable after thr loop is done
 
-        for (let i = 0; i < classes.length; i++) {
-            const currentClass = classes[i];
+    // 6/5/23
 
-            if (currentClass.students > largestCount) {
-                largestCount = currentClass.students;
-            }
-        }
+    // 1. Create a function that prints 1 to 100.
 
-        return largestCount;
-    }
+    // let max = 100
+    // for(let i = 1; i<= max; i++){
+    //     console.log(i)
+    // }
 
-    console.log(returnLargestStudentCount(classes)); // Output: 30
+    function fizzBuzz(){
+        for(let i = 1; i<= 100; i++) {
+            if (i % 3 === 0) {
+                return "fizz";
+            } else if (i % 5 === 0) {
+                return "buzz"
+
+            }}}
+
+
+
+
+
+    // 2. Create a function, fizzBuzz, that prints out all numbers from 1 to 100 but instead of printing
+    // numbers that are evenly divisible by 3, print 'fizz' and any numbers evenly divisible
+    // by 5, print 'buzz'. For any numbers that are evenly divisible by 3 AND 5, print 'fizzbuzz'.
+
+
+    /*
+    fizzBuzz() // prints...
+
+    1
+    2
+    'fizz'
+    4
+    'buzz'
+    'fizz'
+    7
+    8
+    'fizz'
+    'buzz'
+    11
+    'fizz'
+    13
+    14
+    'fizzbuzz'
+    etc...
+
+    */
 
 
 
