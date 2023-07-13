@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html>
 <head>
     <title>Online Store</title>
-
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/ajax-store.css">
 </head>
 <body>
+<div class="page-wrapper">
+    <div class="container grow justify-center">
+        <div class="row justify-center">
+            <div class="column shrink gap-10">
+                <h1 class="text-center">My Tool Store</h1>
+                <table id="products">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Categories</th>
+                    </tr>
+                    </thead>
 
-<h1>My Tool Store</h1>
-
-<table id="products">
-    <thead>
-    <tr>
-        <th>Title</th>
-        <th>Quantity</th>
-        <th>Price</th>
-        <th>Categories</th>
-    </tr>
-    </thead>
-    <tbody id="insertProducts"></tbody>
-</table>
-
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous"></script>
+                    <tbody id="insertProducts"></tbody>
+                </table>
+                <button id="refreshTable">Refresh Table</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-    <script src="js/ajax-store.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/ajax-store.js"></script>
 
 </body>
 </html>
+

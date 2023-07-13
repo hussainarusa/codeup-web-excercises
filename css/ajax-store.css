@@ -1,0 +1,93 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.text-center {
+    text-align: center;
+    color: #0e7ebb;
+}
+table {
+    min-width:800px;
+    max-width: 800px;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-radius: 3px;
+    box-shadow: var(--box-shadow);
+    /* variables for table */
+    --border-color: #0e7ebb;
+    --border-radius: 3px;
+
+}
+table th, table td {
+    border:1px solid var(--border-color);
+
+    padding: 10px 20px;
+    text-align: left;
+}
+table th {
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #560808;
+    color: #fff;
+}
+
+
+#refreshTable {
+    height: 40px;
+    background: #0e7ebb;
+    box-shadow: -6px 6px 0 0 #c05555;
+    border: none;
+    outline: none;
+    position: relative;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center;
+    color: #fff;
+
+}
+
+#refreshTable:active {
+    box-shadow: -3px 3px 0 0 #c05555;
+    top: 3px;
+    left: -3px;
+    background-color:#0e7ebb;
+}
+
+#refreshTable::before {
+    content: '';
+    position: absolute;
+    background: none;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-right: 6px solid #c05555;
+    border-left-width: 0;
+    top: 0;
+    left: -6px;
+}
+
+#refreshTable:active::before {
+    border: 3px solid transparent;
+    border-right: 3px solid #c05555;
+}
+
+#refreshTable::after {
+    content: '';
+    position: absolute;
+    background: none;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top: 6px solid #c05555;
+    border-bottom-width: 0;
+    bottom: -6px;
+    right: 0;
+}
+#refreshTable:active:after {
+    border: 3px solid transparent;
+    border-top: 3px solid #c05555;
+}
