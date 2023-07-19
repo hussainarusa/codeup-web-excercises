@@ -16,9 +16,11 @@
 }
 
 .page-wrapper{
-    background-color: var(--dark-goop);
-    min-width: 100%;
-    min-height: 100%
+
+    background-image: url("/img/galacticBG.png") ;
+    background-size: cover;
+    background-position: center;
+
 }
 
 #forecast-card-container{
@@ -26,19 +28,19 @@
     gap: 5px;
 }
 .header{
-    justify-content: space-between;
-}
-.headerCss{
-    color: var(--dark-violet)!important;
 
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
+
 .weatherLocation{
     color: var(--light-purp)!important;
     font-size: 25px;
 }
 
 #searchWeatherForm{
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .labelz{
@@ -47,13 +49,15 @@
 
 #location{
     background-color: var(--light-purp)!important;
-    color: var(--eggplant);
+    margin-right: 20px;
 }
 
-button{
-    background-color: var(--light-purp)!important;
-    color: var(--eggplant);
+#searchWeatherForm {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
 }
+
 
 div.card{
 
@@ -70,6 +74,7 @@ div.card{
 /* Optional: Customize styles for the map and weather cards */
 .map-container {
     padding: 15px;
+    align-content: flex-end;
 }
 
 .card {
@@ -78,12 +83,13 @@ div.card{
     border: 2px solid  var(--dark-violet);
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 10000px;
 
 }
 
 .weatherDate{
     color: var(--eggplant);
-    font-size: 20px;
+    font-size: 2em;
 
 
 }
@@ -92,4 +98,83 @@ div.card{
     text-align: center;
 }
 
+.map-container{
+    max-width: 50%;
+}
 
+
+/*//button css*/
+
+.Btn {
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 45px;
+    border: none;
+    background-color: #b867b5;
+    color: white;
+    box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+    0px 5px 10px rgba(5, 5, 5, 0.212),
+    0px -10px 10px
+    #97161d inset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Btn::before {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.678);
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
+}
+
+.Btn::after {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.137);
+    content: "";
+    filter: blur(1px);
+    bottom: 7px;
+    border-radius: 50%;
+}
+
+.Btn:hover {
+    animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}

@@ -18,41 +18,39 @@
 
     <!--beggining-->
 
-</head>
-<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+                        <div class="container-fluid">
+                            <p class="navbar-brand header">Weather Dashboard</p>
+                        </div>
 
-<div class="page-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <header class=" py-3 d-flex justify-content-between">
-                    <h1 class="fw-bold h3 my-1 headerCss">Weather Dashboard</h1>
-                    <h1 id="weatherLocation"> </h1>
-                </header>
+                    </nav>
+                        <div class=" d-flex flex-column align-items-end">
 
-                <form id="searchWeatherForm">
-                    <label class="labelz" for="location">Search: </label>
-                    <input type="text" id="location" name="location"  placeholder="City, State" required>
+                            <form id="searchWeatherForm">
+                                <label class="labelz" for="location"></label>
+                                <input type="text" id="location" name="location"  placeholder="City, State" required>
+                                <button  class="Btn" type="submit">Get Weather</button>
+                            </form>
 
-                    <button type="submit">Get Weather</button>
-                </form>
+                            <div class="row map-container">
+                                <div id='map' style='width: 960px; height: 330px;'></div>
+                            </div>
+                        </div>
 
 
-                <div class="row map-container">
-                    <div id='map' style='width: 960px; height: 330px;'></div>
+
+                    <!-- Rest of the Forecast Cards -->
+                    <div id="forecast-card-container">
+                        <!-- Other forecast cards will be dynamically added here using JavaScript -->
+                    </div>
                 </div>
-
-                <h1 id="locationName"> </h1>
-
-                <div id="forecast-card-container">
-                    <p class="cards"></p>
-                </div>
-
-
             </div>
         </div>
     </div>
-</div>
 
 
 

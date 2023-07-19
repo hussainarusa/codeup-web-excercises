@@ -49,7 +49,25 @@ $(() => {
             },
         });
     }
+// The function to display today's forecast card
+    function displayTodayForecast(todayForecastData) {
+        $('#today-forecast-card').empty();
 
+        const description = todayForecastData.weather[0].description;
+        const currentTemperature = todayForecastData.main.temp;
+        const humidity = todayForecastData.main.humidity;
+        const windSpeed = todayForecastData.wind.speed;
+
+        $('#today-forecast-card').append(`
+        <div class="card">
+            <h1 class="weatherDate carti">Today's Forecast</h1>
+            <p class="carti">Temperature: ${currentTemperature.toFixed(2)} °F</p>
+            <p class="carti">Humidity: ${humidity.toFixed(2)} %</p>
+            <p class="carti">Wind Speed: ${windSpeed.toFixed(1)} m/s</p>
+            <p class="carti">${description}</p>
+        </div>
+    `);
+    }
     function displayWeatherData(data) {
         const city = data.name;
         const country = data.sys.country;
@@ -118,7 +136,7 @@ $(() => {
 
         const mapOptions = {
             container: 'map',
-            style: 'mapbox://styles/mapbox/navigation-night-v1',
+            style: 'mapbox://styles/mapbox/dark-v11',
             zoom: 10,
             center: [-98.4916, 29.4252],
         };
