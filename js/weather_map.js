@@ -110,11 +110,10 @@ $(() => {
 
             const description = dateForecastData[0].weather[0].description;
 
-
             $('#forecast-card-container').append(`
         <div class="card">
           <h1 class="weatherDate carti">${dayOfWeek} - ${dateWithoutYear}</h1>
-          <p class="carti"> H:${averageMinTemperature.toFixed(2)} °F / L:${averageMaxTemperature.toFixed(2)} °F</p>
+          <p class="carti temp"> H:${averageMinTemperature.toFixed(2)} °F / L:${averageMaxTemperature.toFixed(2)} °F</p>
           <p class="carti">Humidity: ${averageHumidity.toFixed(2)} %</p>
           <p class="carti">Wind Speed: ${averageWindSpeed.toFixed(1)} m/s</p>
           <p class="carti"> ${description}</p>

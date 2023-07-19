@@ -87,7 +87,7 @@ div.card{
 
 .weatherDate{
     color: var(--eggplant);
-    font-size: 2em;
+    font-size: 1.5em;
 
 
 }
@@ -174,3 +174,41 @@ div.card{
         transform: scale3d(1, 1, 1);
     }
 }
+
+/* CSS for the forecast cards */
+#forecast-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px; /* Adjust this to your desired width */
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px; /* Adjust this to your desired card width */
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(249, 249, 249, 0.8); /* Set the background color with alpha (opacity) */
+    backdrop-filter: blur(5px); /* Add a backdrop blur effect for a semi-transparent look */
+}
+
+.weatherDate {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.carti {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.temp {
+    font-size: 16px;
+}
+
+/* You can add more specific styling here if needed */
+
