@@ -1,0 +1,95 @@
+:root {
+    --dark-violet:
+            #278282;
+    --light-indigo: #748cf1;
+    --eggplant: #24142c;
+    --mauve: #9e616b;
+    --light-purp: #abaed3;
+    --dark-goop: #3e3b51;
+
+    --main-font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+*{
+    font-family: var(--main-font-family);
+}
+
+.page-wrapper{
+    background-color: var(--dark-goop);
+    min-width: 100%;
+    min-height: 100%
+}
+
+#forecast-card-container{
+    display: flex;
+    gap: 5px;
+}
+.header{
+    justify-content: space-between;
+}
+.headerCss{
+    color: var(--dark-violet)!important;
+
+}
+.weatherLocation{
+    color: var(--light-purp)!important;
+    font-size: 25px;
+}
+
+#searchWeatherForm{
+    margin-bottom: 20px;
+}
+
+.labelz{
+    color: var(--light-purp);
+}
+
+#location{
+    background-color: var(--light-purp)!important;
+    color: var(--eggplant);
+}
+
+button{
+    background-color: var(--light-purp)!important;
+    color: var(--eggplant);
+}
+
+div.card{
+
+    color: var(--eggplant);
+}
+/* Adjust column width for different screen sizes */
+@media (max-width: 767px) {
+    .col-md-6 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Optional: Customize styles for the map and weather cards */
+.map-container {
+    padding: 15px;
+}
+
+.card {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 2px solid  var(--dark-violet);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.weatherDate{
+    color: var(--eggplant);
+    font-size: 20px;
+
+
+}
+
+.carti{
+    text-align: center;
+}
+
+
