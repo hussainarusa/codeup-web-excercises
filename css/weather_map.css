@@ -1,13 +1,9 @@
 :root {
-    --dark-violet:
-            #278282;
     --light-indigo: #748cf1;
     --eggplant: #24142c;
-    --mauve: #9e616b;
     --light-purp: #abaed3;
     --dark-goop: #3e3b51;
-
-    --main-font-family: 'Montserrat Alternates', sans-serif;
+    --main-font-family: 'Roboto', sans-serif;
 }
 
 
@@ -48,8 +44,10 @@
 }
 
 #location{
-    background-color: var(--light-purp)!important;
+
     margin-right: 20px;
+    border-radius: 20em;
+    border-color:#9e293d;
 }
 
 #searchWeatherForm {
@@ -94,13 +92,11 @@ div.card{
 
 }
 
-.carti{
-    text-align: center;
+.title{
+    color: white;
+    margin-right: 14.5em;
 }
 
-.map-container{
-    max-width: 50%;
-}
 
 
 /*//button css*/
