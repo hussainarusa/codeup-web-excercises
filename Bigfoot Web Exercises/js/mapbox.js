@@ -19,6 +19,15 @@ const restaurants =[
     {name: "Earth Burger", longitude: -98.604520, latitude: 29.481310, info: "Delicious fully vegan fast food menu!"},
     {name: "Vegan Sun", longitude: -111.662781, latitude: 40.233280, info: "Hidden gem for vietnamese vegan food in Utah!"}
 ];
+new mapboxgl.Popup()
+    
+    .setHTML = function (s) {
+    return undefined;
+};
+new mapboxgl.Marker(element)
+    .setLngLat = function (param) {
+    
+};
 restaurants.forEach(restaurant=>{
     const element = document.createElement("div");
     element.className = 'marker';

@@ -6,7 +6,6 @@
     --main-font-family: 'Roboto', sans-serif;
 }
 
-
 *{
     font-family: var(--main-font-family);
 }
@@ -35,10 +34,6 @@
     font-size: 25px;
 }
 
-#searchWeatherForm{
-    margin: 20px;
-}
-
 .labelz{
     color: var(--light-purp);
 }
@@ -52,16 +47,15 @@
 
 #searchWeatherForm {
     margin: 20px;
-    display: flex;
+    /*display: flex;*/
     flex-direction: row;
 }
-
 
 div.card{
 
     color: var(--eggplant);
 }
-/* Adjust column width for different screen sizes */
+
 @media (max-width: 767px) {
     .col-md-6 {
         flex-basis: 100%;
@@ -69,7 +63,7 @@ div.card{
     }
 }
 
-/* Optional: Customize styles for the map and weather cards */
+/*  styles for the map and weather cards */
 .map-container {
     padding: 15px;
     align-content: flex-end;
@@ -95,6 +89,7 @@ div.card{
 .title{
     color: white;
     margin-right: 14.5em;
+    align-content: center;
 }
 
 
@@ -104,7 +99,7 @@ div.card{
 .Btn {
     position: relative;
     width: 150px;
-    height: 55px;
+    height: 35px;
     border-radius: 45px;
     border: none;
     background-color: #b867b5;
@@ -117,6 +112,7 @@ div.card{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .Btn::before {
@@ -180,7 +176,7 @@ div.card{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 800px; /* Adjust this to your desired width */
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -188,10 +184,10 @@ div.card{
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
-    width: 200px; /* Adjust this to your desired card width */
+    width: 200px;
     margin: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: rgba(249, 249, 249, 0.8); /* Set the background color with alpha (opacity) */
+    background-color: rgba(249, 249, 249, 0.8);
     backdrop-filter: blur(5px); /* Add a backdrop blur effect for a semi-transparent look */
 }
 
@@ -210,5 +206,4 @@ div.card{
     font-size: 16px;
 }
 
-/* You can add more specific styling here if needed */
 

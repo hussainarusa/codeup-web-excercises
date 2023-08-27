@@ -66,7 +66,6 @@ users.forEach(({name, email, languages}) => {
     // TODO: rewrite the assignment below to use template strings
     developers.push(`${name}'s email is ${email}. ${name} knows ${languages.join(', ')}.`);
 });
-
 // TODO: Use `let` for the following variable
 // let list = '<ul>';
 let list = document.createElement('ul');

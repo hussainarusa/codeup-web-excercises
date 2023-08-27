@@ -32,7 +32,7 @@
     document.querySelector(".pompom").style.display = "none";
 
 
-        alert("Sprinkling sleep dust!");
+        alert("Sprinkling sleepy dust!");
 
     // Show the animated image
     document.getElementById("sleepy-image").style.display = "block";

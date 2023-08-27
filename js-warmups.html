@@ -1,550 +1,1022 @@
 
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>JS Warm Ups</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<script>-->
+<!--    "use strict";-->
+
+<!--    /* TODO-->
+
+<!--      Write a function, addTen, that takes in an input. If the input is a number,-->
+<!--      return the input plus ten and false otherwise.-->
+
+<!--      Examples:-->
+
+<!--      addTen(0); // returns 10-->
+<!--      addTen(10); // returns 20-->
+<!--      addTen('bob'); // returns false-->
+
+<!--     */-->
+
+<!--    // function addTen(input) {-->
+<!--    //     let number = Number(input);-->
+<!--    //     if (isNaN(input)) {-->
+<!--    //         console.log(false);-->
+<!--    //     } else {-->
+<!--    //         console.log(number + 10);-->
+<!--    //     }-->
+<!--    // }-->
+<!--    //-->
+<!--    // addTen(10);-->
+<!--    // addTen("monkey");-->
+
+
+
+<!--    /* TODO-->
+
+<!--   / Write a function, makeUpperCase, that takes in an input and returns the input in uppercase if it is a string.-->
+<!--   / If the input is not a string, return false.-->
+
+
+<!--    Examples:-->
+
+<!--    makeUpperCase('cat') // returns 'CAT'-->
+<!--    makeUpperCase('DoG') // returns 'DOG'-->
+<!--    makeUpperCase('CODEUP') // returns 'CODEUP'-->
+<!--    makeUpperCase(54) // returns false-->
+<!--    makeUpperCase(true) // returns false-->
+<!--    makeUpperCase(null) // returns false-->
+
+<!--    */ //   PSEUDOCODE:  take in input, check if input is equal to the value and type of a string-->
+<!--    // if returns as a string then return the input in all uppercase-->
+<!--    // if the input is not a string then return false-->
+
+<!--    // function makeUpperCase(input){-->
+<!--    //     let userInput = typeof input-->
+<!--    //     if (userInput === "string"){-->
+<!--    //         return (input.toUpperCase())-->
+<!--    //     } else return false;-->
+<!--    // }-->
+<!--    //-->
+<!--    //-->
+<!--    // console.log(makeUpperCase("monkey"));-->
+<!--    // console.log(makeUpperCase(54));-->
+<!--    // console.log(makeUpperCase("5"));-->
+<!--    // console.log(makeUpperCase("doG"));-->
+
+
+
+
+<!--    // ================================= WARM UP-->
+<!--    //-->
+<!--    // Write a function, sumIsEqual, that takes in three inputs. The function should return-->
+<!--    // true if the sum of the first two inputs are equal to the third input. If any of the-->
+<!--    // inputs are not numbers, return false.-->
+<!--    //-->
+<!--    // sumIsEqual(1, 2, 3) // returns true-->
+<!--    // sumIsEqual(2, 2, 4) // returns true-->
+<!--    // sumIsEqual(10, 2, 12) // returns true-->
+<!--    // sumIsEqual(10, false, 12) // returns false-->
+<!--    // sumIsEqual('10', '2', 12) // returns false-->
+<!--    // sumIsEqual('fred', 'bob, 'hello') // returns false-->
+
+<!--    // function sumIsEqual (a,b,c){-->
+<!--    //     let a1,b1,c1 = typeof(a,b,c)-->
+<!--    //     return a1 + b1 === c1;-->
+<!--    // }-->
+<!--    //-->
+<!--    // console.log(sumIsEqual(1,2,3))-->
+
+
+
+<!--    // function sumIsEqual (input1, input2, input3){-->
+<!--    //     if (typeof input1 !== `number` || typeof input2 !== `number` || typeof input3 !== `number`){-->
+<!--    //         return false;-->
+<!--    //-->
+<!--    //     }-->
+<!--    //     return input1 + input2 === input3;-->
+<!--    // }-->
+
+
+<!--    // ================================= WARM UP-->
+<!--    //-->
+<!--    // Write a function, returnUserObject, that takes in three String arguments: a username, password, and email. The function should return a user object with username, password and email properties.-->
+<!--    //-->
+<!--    // returnUserObject('jreich', 'password123', 'jreich@email.com') // returns...-->
+<!--    //-->
+<!--    // {-->
+<!--    //     username: 'jreich',-->
+<!--    //         password: 'password123',-->
+<!--    //     email: 'jreich@email.com'-->
+<!--    // }-->
+<!--    //-->
+<!--    // Assume all inputs are non-empty strings. The order of the properties does not matter.-->
+
+
+
+<!--        // function returnUserObject(username,password,email){-->
+<!--        //    if (input === 'string');-->
+<!--        //    return object[]-->
+<!--        //-->
+<!--        // }-->
+
+
+
+<!--    // function returnUserObject(username, password, email) {-->
+<!--    //     return {-->
+<!--    //         username: username,-->
+<!--    //         password: password,-->
+<!--    //         email: email-->
+<!--    //     };-->
+<!--    // }-->
+
+
+
+
+<!--    // function returnProduct([array]){-->
+<!--    //     return (array^3)-->
+<!--    // }-->
+<!--    //-->
+<!--    // returnProduct([1,2,3])-->
+<!--    // console.log(returnProduct([1,2,3]))-->
+
+<!--    //-->
+<!--    // function returnProduct(numbers) {-->
+<!--    //     let product = 1;-->
+<!--    //     for (let i = 0; i < numbers.length; i+=1) {-->
+<!--    //         product *= numbers[i];  // give me the element that is at index i-->
+<!--    //     }-->
+<!--    //     return product;-->
+<!--    // }-->
+<!--    //-->
+<!--    // console.log(returnProduct([1, 2, 3]));-->
+
+
+<!--    // make sure you don't loop over a product that does not exist-->
+
+<!--    // ================================= WARM UP 6/26/23-->
+<!--    //-->
+<!--    // Create a function, returnTotalSales, that takes in an array of sales data objects and returns the sum of all-->
+<!--    // totalItemsSold properties. Assume all elements in the input array are valid sales data objects with a totalItemsSold-->
+<!--    // property.-->
+<!--    //-->
+<!--    //     EXAMPLE...-->
+<!--    //-->
+
+
+<!--    // first need to access the total Items Sold, how find an element in an array-->
+
+<!--    // const salesData = [-->
+<!--    //     { //index 0-->
+<!--    //         month: 'January',-->
+<!--    //         totalItemsSold: 0-->
+<!--    //     },-->
+<!--    //     { //index 1-->
+<!--    //         month: 'February',-->
+<!--    //         totalItemsSold: 5-->
+<!--    //     },-->
+<!--    //     {// index 2-->
+<!--    //         month: 'March',-->
+<!--    //         totalItemsSold: 2-->
+<!--    //     },-->
+<!--    //     {// index 3-->
+<!--    //         month: 'April',-->
+<!--    //         totalItemsSold: 10-->
+<!--    //     },-->
+<!--    //     { //index 4-->
+<!--    //         month: 'May',-->
+<!--    //         totalItemsSold: 30-->
+<!--    //     }-->
+<!--    // ];-->
+
+<!--    // returnTotalSales(salesData) // returns 47-->
+
+<!--    // console.log(salesData[3].totalItemsSold);-->
+<!--    //-->
+<!--    // const total= salesData[0].totalItemsSold+-->
+<!--    //     salesData[1].totalItemsSold+-->
+<!--    //     salesData[2].totalItemsSold+-->
+<!--    //     salesData[3].totalItemsSold+-->
+<!--    //     salesData[4].totalItemsSold+-->
+
+<!--    // function returnTotalSales(salesData){-->
+<!--    //     // if (salesData.hasOwnProperty(totalItemsSold)){-->
+<!--    //     // }-->
+<!--    //     const total= salesData[0].totalItemsSold+-->
+<!--    //         salesData[1].totalItemsSold+-->
+<!--    //         salesData[2].totalItemsSold+-->
+<!--    //         salesData[3].totalItemsSold+-->
+<!--    //         salesData[4].totalItemsSold;-->
+<!--    //     return total;-->
+<!--    // }-->
+
+
+<!--    // the problem with this function is that if you do not have five elements in the array, this is a very hard approach so looping through it will be a great approach-->
+
+<!--        //NEED TO PRACTICE JAVASCRIPT GURL , FOR LOOPS ARE MORE FLEXIBLE-->
+
+
+
+
+<!--    // function returnTotalSales(salesData){-->
+<!--    //     let sum = 0-->
+<!--    //     //for-->
+<!--    //      for(let i = 0; i < salesData.length; i += 1){ //length is always going to be one more than the last index #-->
+<!--    //          sum += salesData[i].totalItemsSold;-->
+<!--    //-->
+<!--    //      }-->
+<!--    //-->
+<!--    //      return sum-->
+<!--    // }-->
+
+<!--    //forEach-->
+
+<!--    // salesData.forEach(element => {-->
+<!--    //     sum += element.totalItemsSold;-->
+<!--    //-->
+<!--    // });-->
+<!--    // return sum;-->
+
+
+<!--    // Create a function, returnAvgSales, that takes in an array of sales data objects and returns the average of all-->
+<!--    // total items sold. Assume all elements in the input array are valid sales data objects with a totalItemsSold-->
+<!--    // property. If the array is empty, return 0. If the array has one element, return the value of the totalItemsSold.-->
+<!--    //-->
+<!--    //     EXAMPLE...-->
+
+<!--    const salesData = [-->
+<!--        {-->
+<!--            month: 'January',-->
+<!--            totalItemsSold: 0-->
+<!--        },-->
+<!--        {-->
+<!--            month: 'February',-->
+<!--            totalItemsSold: 5-->
+<!--        },-->
+<!--        {-->
+<!--            month: 'March',-->
+<!--            totalItemsSold: 2-->
+<!--        },-->
+<!--        {-->
+<!--            month: 'April',-->
+<!--            totalItemsSold: 10-->
+<!--        },-->
+<!--        {-->
+<!--            month: 'May',-->
+<!--            totalItemsSold: 30-->
+<!--        }-->
+<!--    ];-->
+
+<!--    // returnAvgSales(salesData) // returns 9.4-->
+
+<!--    //-->
+<!--    // function returnAvgSales(){-->
+<!--    //     let total = 0-->
+<!--    //    for(let i = 0; i < salesData.length; i += 1) {-->
+<!--    //        average *= salesData[i].totalItemsSold-->
+<!--    //    }-->
+<!--    //    return average-->
+<!--    // }-->
+
+<!--    // function returnAvgSales(salesData) {-->
+<!--    //     // Check if the salesData array is empty-->
+<!--    //     if (salesData.length === 0) {-->
+<!--    //         return 0;  // Return 0 if the array is empty-->
+<!--    //     }-->
+<!--    //     // Check if the salesData array has only one element-->
+<!--    //     else if (salesData.length === 1) {-->
+<!--    //         return salesData[0].totalItemsSold;  // Return the totalItemsSold value of the single element-->
+<!--    //     }-->
+<!--    //     // Calculate the average for an array with more than one element-->
+<!--    //     else {-->
+<!--    //        let totalItemsSold = 0;  // Variable to store the sum of totalItemsSold-->
+<!--    //         // Iterate through each element in the salesData array-->
+<!--    //         for (let i = 0; i < salesData.length; i++) {-->
+<!--    //             totalItemsSold += salesData[i].totalItemsSold;  // Add the totalItemsSold value to the sum-->
+<!--    //         }-->
+<!--    //         return totalItemsSold / salesData.length;  // Calculate the average and return it-->
+<!--    //     }-->
+<!--    // }-->
+
+
+
+
+<!--    //  WarmUp 6/28/23-->
+
+<!--    // Create a function, returnAdmins, that takes in an array of user objects-->
+<!--    // and returns an array of only the admin user objects. Assume the array-->
+<!--    // has at least one user object and all elements have an isAdmin property.-->
+<!--    //-->
+<!--    //     Example:-->
+
+<!--    //-->
+<!--    // const users = [-->
+<!--    //-->
+<!--    //     {-->
+<!--    //         username: 'fred123',-->
+<!--    //         password: 'letmein',-->
+<!--    //         email: 'fred123@email.com',-->
+<!--    //         isAdmin: true-->
+<!--    //     },-->
+<!--    //     {-->
+<!--    //         username: 'cindy123',-->
+<!--    //         password: 'hello123',-->
+<!--    //         email: 'cindy123@email.com',-->
+<!--    //         isAdmin: false-->
+<!--    //     },-->
+<!--    //     {-->
+<!--    //         username: 'kathy123',-->
+<!--    //         password: 'letmein',-->
+<!--    //         email: 'kathy123@email.com',-->
+<!--    //         isAdmin: true-->
+<!--    //     },-->
+<!--    //     {-->
+<!--    //         username: 'kyle123',-->
+<!--    //         password: 'letmein',-->
+<!--    //         email: 'kyle123@email.com',-->
+<!--    //         isAdmin: false-->
+<!--    //     }-->
+<!--    // ]-->
+
+
+<!--    /*-->
+
+<!--    returnAdmins(users) returns...-->
+
+<!--    [-->
+
+<!--        {-->
+<!--            username: 'fred123',-->
+<!--            password: 'letmein',-->
+<!--            email: 'fred123@email.com',-->
+<!--            isAdmin: true-->
+<!--        },-->
+<!--        {-->
+<!--            username: 'kathy123',-->
+<!--            password: 'letmein',-->
+<!--            email: 'kathy123@email.com',-->
+<!--            isAdmin: true-->
+<!--        }-->
+<!--    ]-->
+
+<!--    */-->
+
+
+<!--    // function returnAdmin([users]){-->
+<!--    //     let isAdmin = true-->
+<!--    //     for (let i = 0; i <= 4 ; i += 1){-->
+<!--    //         if (isAdmin === true){-->
+<!--    //             return users-->
+<!--    //         }-->
+<!--    //     }-->
+<!--    // }-->
+<!--    //-->
+<!--    // console.log(returnAdmin(users));-->
+
+
+<!--        // ================================= WARM UP-->
+
+<!--    // Write a function that takes a neighborhood object and determines if it is desirable. A neighborhood is desirable.-->
+<!--    //     If the median home price is less than 300000, crime rates are low, and the total rating of schools is at least 24.-->
+<!--    // The function should return true if the neighborhood object is desireable and false otherwise.-->
+
+<!--// example data...-->
+<!--//-->
+<!--//         const neighborhood1 = {-->
+<!--//         neighborhood: "Lovely Estates",-->
+<!--//         medianHomePrice: 280000,-->
+<!--//         pool: true,-->
+<!--//         tennis: false,-->
+<!--//         crimeRate: "low",-->
+<!--//         schools: 22-->
+<!--//     };-->
+<!--//-->
+<!--//     const neighborhood2 = {-->
+<!--//         neighborhood: "Luminous Estates",-->
+<!--//         medianHomePrice: 270000,-->
+<!--//         pool: true,-->
+<!--//         tennis: false,-->
+<!--//         crimeRate: "high",-->
+<!--//         schools: 24-->
+<!--//     }-->
+<!--//-->
+<!--//     const neighborhood3 = {-->
+<!--//         neighborhood: "Oak Mountain",-->
+<!--//         medianHomePrice: 290000,-->
+<!--//         pool: false,-->
+<!--//         tennis: false,-->
+<!--//         crimeRate: "low",-->
+<!--//         schools: 24-->
+<!--//     }-->
+<!--//-->
+<!--//     const neighborhood4 = {-->
+<!--//         neighborhood: "Ginormous Acres",-->
+<!--//         medianHomePrice: 350000,-->
+<!--//         pool: true,-->
+<!--//         tennis: true,-->
+<!--//         crimeRate: "low",-->
+<!--//         schools: 27-->
+<!--//     }-->
+
+
+
+<!--// function isDesirable(input){-->
+<!--//-->
+<!--//         let i = 0-->
+<!--//         for (let i = 0; i < 4; i += 1){-->
+<!--//             let medianHomePrice;-->
+<!--//             let crimeRate;-->
+<!--//             return medianHomePrice <= 300000 && (crimeRate === "low");-->
+<!--//     }-->
+<!--//-->
+<!--// }-->
+<!--//-->
+<!--//     function isDesirable(input) {-->
+<!--//         let medianHomePrice;-->
+<!--//         let crimeRate;-->
+<!--//-->
+<!--//         for (let i = 0; i < 4; i += 1) {-->
+<!--//             // Set the values of medianHomePrice and crimeRate based on input or other data source-->
+<!--//             medianHomePrice = input.medianHomePrice;-->
+<!--//             crimeRate = input.crimeRate;-->
+<!--//-->
+<!--//             if (medianHomePrice <= 300000 && crimeRate === "low") {-->
+<!--//                 return true;-->
+<!--//             }-->
+<!--//         }-->
+<!--//-->
+<!--//         return false;-->
+<!--//     }-->
+<!--//-->
+<!--//-->
+<!--//     console.log(isDesirable(neighborhood1));-->
+<!--//     console.log(isDesirable(neighborhood2));-->
+<!--//     console.log(isDesirable(neighborhood3));-->
+<!--//     console.log(isDesirable(neighborhood4));-->
+
+<!--    //     ================================= WARM UP-->
+<!--    //-->
+<!--    //-->
+<!--    // Write a function, returnLargestStudentCount, that takes in an array of classes returns the number of students in the largest class.-->
+<!--    // Assume at least one class object will be present in the input array with students property set to a valid positive integer.-->
+
+<!--    //     let classes = [-->
+<!--    //     {class: "6th grade history", students: 18},-->
+<!--    //     {class: "7th grade history", students: 20},-->
+<!--    //     {class: "8th grade history", students: 22},-->
+<!--    //     {class: "4th grade history", students: 30},-->
+<!--    //     {class: "10th grade history", students: 25}-->
+<!--    // ];-->
+<!--    //-->
+<!--    //-->
+<!--    // function returnLargestStudentCount(classes) {-->
+<!--    //     let largestCount = 0; // cant be declared inside of the loop because we need to work with the variable after thr loop is done-->
+<!--    //-->
+<!--    //     for (let i = 0; i < classes.length; i++) {-->
+<!--    //         const currentClass = classes[i];-->
+<!--    //-->
+<!--    //         if (currentClass.students > largestCount) {-->
+<!--    //             largestCount = currentClass.students;-->
+<!--    //         }-->
+<!--    //     }-->
+<!--    //-->
+<!--    //     return largestCount;-->
+<!--    // }-->
+<!--    //-->
+<!--    // console.log(returnLargestStudentCount(classes)); // Output: 30-->
+
+
+
+<!--    // 6/5/23-->
+
+<!--    // 1. Create a function that prints 1 to 100.-->
+
+<!--    // let max = 100-->
+<!--    // for(let i = 1; i<= max; i++){-->
+<!--    //     console.log(i)-->
+<!--    // }-->
+<!--    //-->
+<!--    // function fizzBuzz(){-->
+<!--    //     for(let i = 1; i<= 100; i++) {-->
+<!--    //         if (i % 3 === 0) {-->
+<!--    //             return "fizz";-->
+<!--    //         } else if (i % 5 === 0) {-->
+<!--    //             return "buzz"-->
+<!--    //-->
+<!--    //         }}}-->
+
+
+
+
+
+<!--    // 2. Create a function, fizzBuzz, that prints out all numbers from 1 to 100 but instead of printing-->
+<!--    // numbers that are evenly divisible by 3, print 'fizz' and any numbers evenly divisible-->
+<!--    // by 5, print 'buzz'. For any numbers that are evenly divisible by 3 AND 5, print 'fizzbuzz'.-->
+
+
+<!--    /*-->
+<!--    fizzBuzz() // prints...-->
+
+<!--    1-->
+<!--    2-->
+<!--    'fizz'-->
+<!--    4-->
+<!--    'buzz'-->
+<!--    'fizz'-->
+<!--    7-->
+<!--    8-->
+<!--    'fizz'-->
+<!--    'buzz'-->
+<!--    11-->
+<!--    'fizz'-->
+<!--    13-->
+<!--    14-->
+<!--    'fizzbuzz'-->
+<!--    etc...-->
+
+<!--    */-->
+
+<!--    // 7/10/23-->
+<!--    // // You are given an array of runner objects, where each object represents a-->
+<!--    // // runner with properties name, age, and lapTimes (in seconds). Write a-->
+<!--    // // function called getTopRunners that takes the runners array as input and-->
+<!--    // // returns an array of top runners. A runner is considered top if their-->
+<!--    // // average lap time is 50 seconds or faster. If there are no top runners in-->
+<!--    // // the input array, the function should return an empty array-->
+
+
+
+<!--    // // HINT: You might want to create a function called calculateLapTimeAverage-->
+<!--    // // that takes in an array of numbers and returns the average-->
+<!--    //-->
+<!--    //-->
+<!--    // Input:-->
+<!--//     const runners = [-->
+<!--//         { name: "Alice", age: 25, lapTimes: [50.5, 45.2, 48.8, 47.1] },-->
+<!--//         { name: "Bob", age: 28, lapTimes: [55.2, 50.7, 53.3, 52.9] },-->
+<!--//         { name: "Charlie", age: 24, lapTimes: [48.9, 46.3, 50.1, 49.5] },-->
+<!--//         { name: "David", age: 27, lapTimes: [51.4, 50.2, 49.8, 52.3] },-->
+<!--//         { name: "Eve", age: 26, lapTimes: [47.7, 45.9, 46.6, 48.3] },-->
+<!--//     ];-->
+<!--//-->
+<!--// // we need t return a runner object-->
+<!--//   function getTopRunner(runnersArray){-->
+<!--//     let topRunner = runnersArray[0];-->
+<!--//-->
+<!--//     for(let i = 1; i < runnersArray.length; i ++){-->
+<!--//         if (calculateLapTimeAverage(runnersArray[i].lapTimes) < calculateLapTimeAverage(topRunner.lapTimes)){-->
+<!--//-->
+<!--//         }-->
+<!--//     }-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//-->
+<!--//   }-->
+
+
+<!--    //-->
+<!--    // // Expected Output:-->
+<!--    // [-->
+<!--    //     { name: 'Alice', age: 25, lapTimes: [50.5, 45.2, 48.8, 47.1] },-->
+<!--    //     { name: 'Charlie', age: 24, lapTimes: [48.9, 46.3, 50.1, 49.5] },-->
+<!--    //     { name: 'Eve', age: 26, lapTimes: [47.7, 45.9, 46.6, 48.3] }-->
+<!--    // ]-->
+<!--    //-->
+<!--    //-->
+<!--    //-->
+<!--    // // BONUS: Each runner in the resulting array should be represented as an-->
+<!--    // // object containing only the name and age properties.-->
+<!--    //-->
+<!--    //-->
+<!--    // // Expected Bonus Output:-->
+<!--    //     [-->
+<!--    //     { name: "Alice", age: 18 },-->
+<!--    //         { name: "Charlie", age: 19 },-->
+<!--    //         { name: "Eve", age: 17 }-->
+<!--    //     ]-->
+<!--    //-->
+<!--    // const lapTimes = runners.filter( runner => runner.lapTimes === lapTimes)-->
+<!--    //-->
+<!--    // console.log(lapTimes)-->
+
+<!--    // function calculateLapTimeAverage (runners){-->
+<!--    //     let total = 0;-->
+<!--    //     let count = 0;-->
+<!--    //     for (let lapTime of lapTimesArray){-->
+<!--    //         total += lapTime;-->
+<!--    //         count++;-->
+<!--    //     }-->
+<!--    // }-->
+
+
+<!--    // function getTopRunners(runnersArray) {-->
+<!--    //     let topRunners= [];-->
+<!--    //-->
+<!--    //     for (let runner of runnersArray){-->
+<!--    //         if(calculateLapTimeAverage(runner.lapTimes) <= 50){-->
+<!--    //-->
+<!--    //             topRunners.push(runner)-->
+<!--    //         }-->
+<!--    //     }-->
+<!--    //-->
+<!--    //     return topRunners-->
+<!--    // }-->
+
+<!--    //-->
+<!--    // function getTopRunner(runnersArray) {-->
+<!--    //     let topRunner;-->
+<!--    //-->
+<!--    //     for (let runner of runnersArray){-->
+<!--    //         if(calculateLapTimeAverage(runner.lapTimes) <= 50){-->
+<!--    //-->
+<!--    //             topRunner.push(runner)-->
+<!--    //         }-->
+<!--    //     }-->
+<!--    //-->
+<!--    //     return topRunner-->
+<!--    // }-->
+<!--    //-->
+<!--    // console.log(getTopRunner(runners));-->
+
+
+<!--    //-->
+<!--    // let filteredData = runners.filter(({ lapTimes }) => lapTimes === 'lapTimes'),-->
+<!--    //     avg = filteredData.reduce((r,c ) => r + c.lapTimes, 0) / filteredData.length;-->
+<!--    //-->
+<!--    // console.log(avg);-->
+
+<!--    // Given the following ARRAY of objects, write a function that LOOPS through-->
+<!--    // the array and console logs the following for each Hogwarts House:-->
+<!--    // Name:-->
+<!--    // Animal:-->
+<!--    // Founder:-->
+<!--    // Common Room:-->
+<!--    // First and Last Name of at least one house head:-->
+
+
+
+<!--    // HINT:-->
+<!--    // When you copy the object into IntelliJ, make sure to expand and collapse-->
+<!--    // the different properties to get a good idea of what is going on and keep-->
+<!--    // from being overwhelmed-->
+
+
+<!--    // BONUS:-->
+<!--    // - Log a random house head each time-->
+<!--    // - Throw some traits in there-->
+<!--    // - Write a conditional statement to log something special for your favorite house-->
+
+
+<!--    const hogwartsHouses = [-->
+<!--        {-->
+<!--            "id": "0367baf3-1cb6-4baf-bede-48e17e1cd005",-->
+<!--            "name": "Gryffindor",-->
+<!--            "houseColours": "Scarlet and gold",-->
+<!--            "founder": "Godric Gryffindor",-->
+<!--            "animal": "Lion",-->
+<!--            "element": "Fire",-->
+<!--            "ghost": "Nearly-Headless Nick",-->
+<!--            "commonRoom": "Gryffindor Tower",-->
+<!--            "heads": [-->
+<!--                {-->
+<!--                    "id": "530da97d-5a83-4ea6-bc15-790edf5b5efc",-->
+<!--                    "firstName": "Minerva",-->
+<!--                    "lastName": "McGonagall"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "9915c5f8-9177-4f63-bba8-d04387a404f9",-->
+<!--                    "firstName": "Godric",-->
+<!--                    "lastName": "Gryffindor"-->
+<!--                }-->
+<!--            ],-->
+<!--            "traits": [-->
+<!--                {-->
+<!--                    "id": "1773bce8-7a22-4d57-b8e1-7e1cbe26fa2b",-->
+<!--                    "name": "Courage"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "21f22e43-efd9-4a43-87f5-eab5fb1666ea",-->
+<!--                    "name": "Chivalary"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "60d8f5d0-de4b-41f7-b152-40543555bf3a",-->
+<!--                    "name": "Nerve"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "68f73efc-fae9-4a54-b3e2-04bbe72f5d63",-->
+<!--                    "name": "Daring"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "7e6d321d-fe7d-4c05-8ad7-ddabda83d8cd",-->
+<!--                    "name": "Determination"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "adf83e9f-859b-41c4-947d-b359a05f8f3c",-->
+<!--                    "name": "Bravery"-->
+<!--                }-->
+<!--            ]-->
+<!--        },-->
+<!--        {-->
+<!--            "id": "805fd37a-65ae-4fe5-b336-d767b8b7c73a",-->
+<!--            "name": "Ravenclaw",-->
+<!--            "houseColours": "Blue and bronze",-->
+<!--            "founder": "Rowena Ravenclaw",-->
+<!--            "animal": "Eagle",-->
+<!--            "element": "Air",-->
+<!--            "ghost": "Grey Lady",-->
+<!--            "commonRoom": "Ravenclaw Tower",-->
+<!--            "heads": [-->
+<!--                {-->
+<!--                    "id": "102ac5fc-db71-4055-8250-bc238cffb3d9",-->
+<!--                    "firstName": "Filius",-->
+<!--                    "lastName": "Flitwick"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "57c04cf4-f3dd-46d6-a78f-84c30fb42533",-->
+<!--                    "firstName": "Rowena",-->
+<!--                    "lastName": "Ravenclaw"-->
+<!--                }-->
+<!--            ],-->
+<!--            "traits": [-->
+<!--                {-->
+<!--                    "id": "08a54d21-6137-4eda-9c32-004706650b44",-->
+<!--                    "name": "Learning"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "5056effc-b92b-4f86-96fd-978b26a849da",-->
+<!--                    "name": "Acceptance"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "78db6224-33d1-490d-a553-9bbbedb3282a",-->
+<!--                    "name": "Inteligence"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "ab88a4fb-1c4d-4e14-88bf-7f55dfabb75a",-->
+<!--                    "name": "Wisdom"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "e43d0b2f-dcfe-4a5f-b3ab-d39679bbfbe3",-->
+<!--                    "name": "Wit"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "ffc55017-c03f-490a-9c48-2f38af6e2f0a",-->
+<!--                    "name": "Creativity"-->
+<!--                }-->
+<!--            ]-->
+<!--        },-->
+<!--        {-->
+<!--            "id": "85af6295-fd01-4170-a10b-963dd51dce14",-->
+<!--            "name": "Hufflepuff",-->
+<!--            "houseColours": "Yellow and black",-->
+<!--            "founder": "Helga Hufflepuff",-->
+<!--            "animal": "Badger",-->
+<!--            "element": "Earth",-->
+<!--            "ghost": "Fat Friar",-->
+<!--            "commonRoom": "Hufflepuff Basement",-->
+<!--            "heads": [-->
+<!--                {-->
+<!--                    "id": "a593e800-95dc-47ab-9243-6ac98d2f6ab4",-->
+<!--                    "firstName": "Helga",-->
+<!--                    "lastName": "Hufflepuff"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "fab07935-774e-4eb4-8ed5-621bfe416d85",-->
+<!--                    "firstName": "Pomona",-->
+<!--                    "lastName": "Sprout"-->
+<!--                }-->
+<!--            ],-->
+<!--            "traits": [-->
+<!--                {-->
+<!--                    "id": "22d8bc5b-67ee-49fb-89ee-8811fc22062b",-->
+<!--                    "name": "Hardworking"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "76973c67-0dd1-4aca-b0b7-b053d9eaf206",-->
+<!--                    "name": "Patience"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "a8494f18-caff-491e-96e3-1ff73bd6f4ab",-->
+<!--                    "name": "Loyalty"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "af80b93e-3c61-4586-824a-8f7e6ac4ae0a",-->
+<!--                    "name": "Just"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "c080647f-5b31-434f-8327-376abbfb0989",-->
+<!--                    "name": "Fairness"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "f62f4753-fdb5-473b-a8ac-07c1b5844eec",-->
+<!--                    "name": "Modesty"-->
+<!--                }-->
+<!--            ]-->
+<!--        },-->
+<!--        {-->
+<!--            "id": "a9704c47-f92e-40a4-8771-ed1899c9b9c1",-->
+<!--            "name": "Slytherin",-->
+<!--            "houseColours": "Green and silver",-->
+<!--            "founder": "Salazar Slytherin",-->
+<!--            "animal": "Serpent",-->
+<!--            "element": "Water",-->
+<!--            "ghost": "Bloody Baron",-->
+<!--            "commonRoom": "Slytherin Dungeon",-->
+<!--            "heads": [-->
+<!--                {-->
+<!--                    "id": "36ba2ceb-6b6f-48a3-b512-9c1e66321eff",-->
+<!--                    "firstName": "Horace",-->
+<!--                    "lastName": "Slughorn"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "5cac8ad3-b5fc-4c48-a951-990cdd5671bc",-->
+<!--                    "firstName": "Salazar",-->
+<!--                    "lastName": "Slytherin"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "ef90f8c9-9f03-478e-baec-8a3c487e5271",-->
+<!--                    "firstName": "Severus",-->
+<!--                    "lastName": "Snape"-->
+<!--                }-->
+<!--            ],-->
+<!--            "traits": [-->
+<!--                {-->
+<!--                    "id": "0992c505-80dd-4b49-ad0b-3b7383d6ec89",-->
+<!--                    "name": "Resourcefulness"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "36dad9bf-010e-47ef-8908-ecb6d5acfac5",-->
+<!--                    "name": "Selfpreservation"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "42b7c304-5e62-4fae-9e52-f8c6a106e406",-->
+<!--                    "name": "Ambition"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "540aaafe-6185-4dc8-94ed-bd0236b433d3",-->
+<!--                    "name": "Cunning"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "d7b7c1b7-3fce-4474-9fd1-9b731e0b2649",-->
+<!--                    "name": "Pride"-->
+<!--                },-->
+<!--                {-->
+<!--                    "id": "df43d46b-1ebf-409d-a63e-6c6bcb049aef",-->
+<!--                    "name": "Determination"-->
+<!--                }-->
+<!--            ]-->
+<!--        }-->
+<!--    ]-->
+
+
+<!--    // Given the following ARRAY of objects, write a function that LOOPS through-->
+<!--    // the array and console logs the following for each Hogwarts House:-->
+<!--    // Name:-->
+<!--    // Animal:-->
+<!--    // Founder:-->
+<!--    // Common Room:-->
+<!--    // First and Last Name of at least one house head:-->
+<!--    //-->
+<!--    // for (let i = 0; i < hogwartsHouses.length; i++) {-->
+<!--    //     console.log(hogwartsHouses[i].name,-->
+<!--    //         hogwartsHouses[i].animal,-->
+<!--    //         hogwartsHouses[i].commonRoom,-->
+<!--    //         hogwartsHouses[i].name,-->
+<!--    //         hogwartsHouses[i].heads[1].firstName,-->
+<!--    //         hogwartsHouses[i].heads[1].lastName-->
+<!--    //     );-->
+<!--    // }-->
+<!--    //-->
+
+<!--    // HINT:-->
+<!--    // When you copy the object into IntelliJ, make sure to expand and collapse-->
+<!--    // the different properties to get a good idea of what is going on and keep-->
+<!--    // from being overwhelmed-->
+
+
+<!--    // BONUS:-->
+<!--    // - Log a random house head each time-->
+<!--    // - Throw some traits in there-->
+<!--    // - Write a conditional statement to log something special for your favorite house-->
+
+<!--//JULY 14th-->
+<!--    // Write a function called removeEvens that takes an array of numbers-->
+<!--    // And removes any even number from the array-->
+
+<!--    // Examples:-->
+
+<!--    // Input: [1, 3, 2, 13, 74, 33]-->
+<!--    // Expected Output: [1, 3, 13, 33]-->
+
+<!--    // Input: [62, 3, 2, 8, 531, 7]-->
+<!--    // Expected Output: [3, 531, 7]-->
+
+
+
+<!--    //-->
+<!--    // function removesEvens(arrayOfNumbers){-->
+<!--    //     let i ;-->
+<!--    //     ( i = 1, i < arrayOfNumbers.length, i ++)-->
+<!--    //     if (i % 2 !== 0){-->
+<!--    //         return arrayOfNumbers - i-->
+<!--    //     } else{-->
+<!--    //         return i-->
+<!--    //     }-->
+<!--    //-->
+<!--    // }-->
+
+<!--function isANum (input){-->
+<!--        if (typeof input === "boolean" || input === null ){-->
+<!--            return false;-->
+<!--        }-->
+<!--        if (!isNaN(input)){-->
+<!--            return true-->
+<!--        }else {-->
+<!--            return false-->
+<!--        }-->
+<!--}-->
+
+
+<!--    function removeEvens(arrayOfNumbers) {-->
+<!--        // guard against anything that is not n array-->
+<!--        if(!Array.isArray(arrayOfNumbers)){-->
+<!--            return false;-->
+<!--        }-->
+<!--        let result = [];-->
+<!--        // guard against any item in array that is NaN-->
+<!--        if (!isANum(arrayOfNumbers)){-->
+<!--            return false-->
+<!--        }-->
+<!--        for (let i = 0; i < arrayOfNumbers.length; i++) {-->
+<!--            if (arrayOfNumbers[i] % 2 !== 0) {-->
+<!--                result.push(arrayOfNumbers[i]);-->
+<!--            }-->
+<!--        }-->
+<!--        return result;-->
+<!--    }-->
+
+<!--    let arrayOfNumbers = [1, 3, 2, 13, 74, 33, 22, 'bob'];-->
+<!--    console.log(removeEvens(arrayOfNumbers));-->
+
+
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS Warm Ups</title>
+    <title>DOM Manipulation Warmups</title>
 </head>
 <body>
 
+<h3>The sum is: <span id="sum-output">0</span></h3>
+
+<label for="number">Number</label>
+<input id="number" type="number" name="number" min="0" max="5" value="0">
+<button id="add-btn">Add</button>
+
+<!--  Include the CDN script for jQuery below -->
+<script
+        src="http://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
 <script>
+
     "use strict";
 
-    /* TODO
-
-      Write a function, addTen, that takes in an input. If the input is a number,
-      return the input plus ten and false otherwise.
-
-      Examples:
-
-      addTen(0); // returns 10
-      addTen(10); // returns 20
-      addTen('bob'); // returns false
-
-     */
-
-    // function addTen(input) {
-    //     let number = Number(input);
-    //     if (isNaN(input)) {
-    //         console.log(false);
-    //     } else {
-    //         console.log(number + 10);
-    //     }
-    // }
-    //
-    // addTen(10);
-    // addTen("monkey");
-
-
-
-    /* TODO
-
-   / Write a function, makeUpperCase, that takes in an input and returns the input in uppercase if it is a string.
-   / If the input is not a string, return false.
-
-
-    Examples:
-
-    makeUpperCase('cat') // returns 'CAT'
-    makeUpperCase('DoG') // returns 'DOG'
-    makeUpperCase('CODEUP') // returns 'CODEUP'
-    makeUpperCase(54) // returns false
-    makeUpperCase(true) // returns false
-    makeUpperCase(null) // returns false
-
-    */ //   PSEUDOCODE:  take in input, check if input is equal to the value and type of a string
-    // if returns as a string then return the input in all uppercase
-    // if the input is not a string then return false
-
-    // function makeUpperCase(input){
-    //     let userInput = typeof input
-    //     if (userInput === "string"){
-    //         return (input.toUpperCase())
-    //     } else return false;
-    // }
-    //
-    //
-    // console.log(makeUpperCase("monkey"));
-    // console.log(makeUpperCase(54));
-    // console.log(makeUpperCase("5"));
-    // console.log(makeUpperCase("doG"));
-
-
-
-
-    // ================================= WARM UP
-    //
-    // Write a function, sumIsEqual, that takes in three inputs. The function should return
-    // true if the sum of the first two inputs are equal to the third input. If any of the
-    // inputs are not numbers, return false.
-    //
-    // sumIsEqual(1, 2, 3) // returns true
-    // sumIsEqual(2, 2, 4) // returns true
-    // sumIsEqual(10, 2, 12) // returns true
-    // sumIsEqual(10, false, 12) // returns false
-    // sumIsEqual('10', '2', 12) // returns false
-    // sumIsEqual('fred', 'bob, 'hello') // returns false
-
-    // function sumIsEqual (a,b,c){
-    //     let a1,b1,c1 = typeof(a,b,c)
-    //     return a1 + b1 === c1;
-    // }
-    //
-    // console.log(sumIsEqual(1,2,3))
-
-
-
-    // function sumIsEqual (input1, input2, input3){
-    //     if (typeof input1 !== `number` || typeof input2 !== `number` || typeof input3 !== `number`){
-    //         return false;
-    //
-    //     }
-    //     return input1 + input2 === input3;
-    // }
-
-
-    // ================================= WARM UP
-    //
-    // Write a function, returnUserObject, that takes in three String arguments: a username, password, and email. The function should return a user object with username, password and email properties.
-    //
-    // returnUserObject('jreich', 'password123', 'jreich@email.com') // returns...
-    //
-    // {
-    //     username: 'jreich',
-    //         password: 'password123',
-    //     email: 'jreich@email.com'
-    // }
-    //
-    // Assume all inputs are non-empty strings. The order of the properties does not matter.
-
-
-
-        // function returnUserObject(username,password,email){
-        //    if (input === 'string');
-        //    return object[]
-        //
-        // }
-
-
-
-    // function returnUserObject(username, password, email) {
-    //     return {
-    //         username: username,
-    //         password: password,
-    //         email: email
-    //     };
-    // }
-
-
-
-
-    // function returnProduct([array]){
-    //     return (array^3)
-    // }
-    //
-    // returnProduct([1,2,3])
-    // console.log(returnProduct([1,2,3]))
-
-    //
-    // function returnProduct(numbers) {
-    //     let product = 1;
-    //     for (let i = 0; i < numbers.length; i+=1) {
-    //         product *= numbers[i];  // give me the element that is at index i
-    //     }
-    //     return product;
-    // }
-    //
-    // console.log(returnProduct([1, 2, 3]));
-
-
-    // make sure you don't loop over a product that does not exist
-
-    // ================================= WARM UP 6/26/23
-    //
-    // Create a function, returnTotalSales, that takes in an array of sales data objects and returns the sum of all
-    // totalItemsSold properties. Assume all elements in the input array are valid sales data objects with a totalItemsSold
-    // property.
-    //
-    //     EXAMPLE...
-    //
-
-
-    // first need to access the total Items Sold, how find an element in an array
-
-    // const salesData = [
-    //     { //index 0
-    //         month: 'January',
-    //         totalItemsSold: 0
-    //     },
-    //     { //index 1
-    //         month: 'February',
-    //         totalItemsSold: 5
-    //     },
-    //     {// index 2
-    //         month: 'March',
-    //         totalItemsSold: 2
-    //     },
-    //     {// index 3
-    //         month: 'April',
-    //         totalItemsSold: 10
-    //     },
-    //     { //index 4
-    //         month: 'May',
-    //         totalItemsSold: 30
-    //     }
-    // ];
-
-    // returnTotalSales(salesData) // returns 47
-
-    // console.log(salesData[3].totalItemsSold);
-    //
-    // const total= salesData[0].totalItemsSold+
-    //     salesData[1].totalItemsSold+
-    //     salesData[2].totalItemsSold+
-    //     salesData[3].totalItemsSold+
-    //     salesData[4].totalItemsSold+
-
-    // function returnTotalSales(salesData){
-    //     // if (salesData.hasOwnProperty(totalItemsSold)){
-    //     // }
-    //     const total= salesData[0].totalItemsSold+
-    //         salesData[1].totalItemsSold+
-    //         salesData[2].totalItemsSold+
-    //         salesData[3].totalItemsSold+
-    //         salesData[4].totalItemsSold;
-    //     return total;
-    // }
-
-
-    // the problem with this function is that if you do not have five elements in the array, this is a very hard approach so looping through it will be a great approach
-
-        //NEED TO PRACTICE JAVASCRIPT GURL , FOR LOOPS ARE MORE FLEXIBLE
-
-
-
-
-    // function returnTotalSales(salesData){
-    //     let sum = 0
-    //     //for
-    //      for(let i = 0; i < salesData.length; i += 1){ //length is always going to be one more than the last index #
-    //          sum += salesData[i].totalItemsSold;
-    //
-    //      }
-    //
-    //      return sum
-    // }
-
-    //forEach
-
-    // salesData.forEach(element => {
-    //     sum += element.totalItemsSold;
-    //
-    // });
-    // return sum;
-
-
-    // Create a function, returnAvgSales, that takes in an array of sales data objects and returns the average of all
-    // total items sold. Assume all elements in the input array are valid sales data objects with a totalItemsSold
-    // property. If the array is empty, return 0. If the array has one element, return the value of the totalItemsSold.
-    //
-    //     EXAMPLE...
-
-    const salesData = [
-        {
-            month: 'January',
-            totalItemsSold: 0
-        },
-        {
-            month: 'February',
-            totalItemsSold: 5
-        },
-        {
-            month: 'March',
-            totalItemsSold: 2
-        },
-        {
-            month: 'April',
-            totalItemsSold: 10
-        },
-        {
-            month: 'May',
-            totalItemsSold: 30
-        }
-    ];
-
-    // returnAvgSales(salesData) // returns 9.4
-
-    //
-    // function returnAvgSales(){
-    //     let total = 0
-    //    for(let i = 0; i < salesData.length; i += 1) {
-    //        average *= salesData[i].totalItemsSold
-    //    }
-    //    return average
-    // }
-
-    // function returnAvgSales(salesData) {
-    //     // Check if the salesData array is empty
-    //     if (salesData.length === 0) {
-    //         return 0;  // Return 0 if the array is empty
-    //     }
-    //     // Check if the salesData array has only one element
-    //     else if (salesData.length === 1) {
-    //         return salesData[0].totalItemsSold;  // Return the totalItemsSold value of the single element
-    //     }
-    //     // Calculate the average for an array with more than one element
-    //     else {
-    //        let totalItemsSold = 0;  // Variable to store the sum of totalItemsSold
-    //         // Iterate through each element in the salesData array
-    //         for (let i = 0; i < salesData.length; i++) {
-    //             totalItemsSold += salesData[i].totalItemsSold;  // Add the totalItemsSold value to the sum
-    //         }
-    //         return totalItemsSold / salesData.length;  // Calculate the average and return it
-    //     }
-    // }
-
-
-
-
-    //  WarmUp 6/28/23
-
-    // Create a function, returnAdmins, that takes in an array of user objects
-    // and returns an array of only the admin user objects. Assume the array
-    // has at least one user object and all elements have an isAdmin property.
-    //
-    //     Example:
-
-    //
-    // const users = [
-    //
-    //     {
-    //         username: 'fred123',
-    //         password: 'letmein',
-    //         email: 'fred123@email.com',
-    //         isAdmin: true
-    //     },
-    //     {
-    //         username: 'cindy123',
-    //         password: 'hello123',
-    //         email: 'cindy123@email.com',
-    //         isAdmin: false
-    //     },
-    //     {
-    //         username: 'kathy123',
-    //         password: 'letmein',
-    //         email: 'kathy123@email.com',
-    //         isAdmin: true
-    //     },
-    //     {
-    //         username: 'kyle123',
-    //         password: 'letmein',
-    //         email: 'kyle123@email.com',
-    //         isAdmin: false
-    //     }
-    // ]
-
-
-    /*
-
-    returnAdmins(users) returns...
-
-    [
-
-        {
-            username: 'fred123',
-            password: 'letmein',
-            email: 'fred123@email.com',
-            isAdmin: true
-        },
-        {
-            username: 'kathy123',
-            password: 'letmein',
-            email: 'kathy123@email.com',
-            isAdmin: true
-        }
-    ]
-
-    */
-
-
-    // function returnAdmin([users]){
-    //     let isAdmin = true
-    //     for (let i = 0; i <= 4 ; i += 1){
-    //         if (isAdmin === true){
-    //             return users
-    //         }
-    //     }
-    // }
-    //
-    // console.log(returnAdmin(users));
-
-
-        // ================================= WARM UP
-
-    // Write a function that takes a neighborhood object and determines if it is desirable. A neighborhood is desirable.
-    //     If the median home price is less than 300000, crime rates are low, and the total rating of schools is at least 24.
-    // The function should return true if the neighborhood object is desireable and false otherwise.
-
-// example data...
-//
-//         const neighborhood1 = {
-//         neighborhood: "Lovely Estates",
-//         medianHomePrice: 280000,
-//         pool: true,
-//         tennis: false,
-//         crimeRate: "low",
-//         schools: 22
-//     };
-//
-//     const neighborhood2 = {
-//         neighborhood: "Luminous Estates",
-//         medianHomePrice: 270000,
-//         pool: true,
-//         tennis: false,
-//         crimeRate: "high",
-//         schools: 24
-//     }
-//
-//     const neighborhood3 = {
-//         neighborhood: "Oak Mountain",
-//         medianHomePrice: 290000,
-//         pool: false,
-//         tennis: false,
-//         crimeRate: "low",
-//         schools: 24
-//     }
-//
-//     const neighborhood4 = {
-//         neighborhood: "Ginormous Acres",
-//         medianHomePrice: 350000,
-//         pool: true,
-//         tennis: true,
-//         crimeRate: "low",
-//         schools: 27
-//     }
-
-
-
-// function isDesirable(input){
-//
-//         let i = 0
-//         for (let i = 0; i < 4; i += 1){
-//             let medianHomePrice;
-//             let crimeRate;
-//             return medianHomePrice <= 300000 && (crimeRate === "low");
-//     }
-//
-// }
-//
-//     function isDesirable(input) {
-//         let medianHomePrice;
-//         let crimeRate;
-//
-//         for (let i = 0; i < 4; i += 1) {
-//             // Set the values of medianHomePrice and crimeRate based on input or other data source
-//             medianHomePrice = input.medianHomePrice;
-//             crimeRate = input.crimeRate;
-//
-//             if (medianHomePrice <= 300000 && crimeRate === "low") {
-//                 return true;
-//             }
-//         }
-//
-//         return false;
-//     }
-//
-//
-//     console.log(isDesirable(neighborhood1));
-//     console.log(isDesirable(neighborhood2));
-//     console.log(isDesirable(neighborhood3));
-//     console.log(isDesirable(neighborhood4));
-
-    //     ================================= WARM UP
-    //
-    //
-    // Write a function, returnLargestStudentCount, that takes in an array of classes returns the number of students in the largest class.
-    // Assume at least one class object will be present in the input array with students property set to a valid positive integer.
-
-    //     let classes = [
-    //     {class: "6th grade history", students: 18},
-    //     {class: "7th grade history", students: 20},
-    //     {class: "8th grade history", students: 22},
-    //     {class: "4th grade history", students: 30},
-    //     {class: "10th grade history", students: 25}
-    // ];
-    //
-    //
-    // function returnLargestStudentCount(classes) {
-    //     let largestCount = 0; // cant be declared inside of the loop because we need to work with the variable after thr loop is done
-    //
-    //     for (let i = 0; i < classes.length; i++) {
-    //         const currentClass = classes[i];
-    //
-    //         if (currentClass.students > largestCount) {
-    //             largestCount = currentClass.students;
-    //         }
-    //     }
-    //
-    //     return largestCount;
-    // }
-    //
-    // console.log(returnLargestStudentCount(classes)); // Output: 30
-
-
-
-    // 6/5/23
-
-    // 1. Create a function that prints 1 to 100.
-
-    // let max = 100
-    // for(let i = 1; i<= max; i++){
-    //     console.log(i)
-    // }
-
-    function fizzBuzz(){
-        for(let i = 1; i<= 100; i++) {
-            if (i % 3 === 0) {
-                return "fizz";
-            } else if (i % 5 === 0) {
-                return "buzz"
-
-            }}}
-
-
-
-
-
-    // 2. Create a function, fizzBuzz, that prints out all numbers from 1 to 100 but instead of printing
-    // numbers that are evenly divisible by 3, print 'fizz' and any numbers evenly divisible
-    // by 5, print 'buzz'. For any numbers that are evenly divisible by 3 AND 5, print 'fizzbuzz'.
-
-
-    /*
-    fizzBuzz() // prints...
-
-    1
-    2
-    'fizz'
-    4
-    'buzz'
-    'fizz'
-    7
-    8
-    'fizz'
-    'buzz'
-    11
-    'fizz'
-    13
-    14
-    'fizzbuzz'
-    etc...
-
-    */
-
-
+    // TODO: add the needed JS so that the number selected in the number input will be added to the number in the span when the button is clicked
+
+    // Get references to the elements
+    const sumOutput = document.getElementById("sum-output");
+    const numberInput = document.getElementById("number");
+    const addButton = document.getElementById("add-btn");
+
+    // Add event listener to the button
+    addButton.addEventListener("click", function() {
+        // Get the current sum value
+        let currentSum = parseInt(sumOutput.innerText);
+
+        // Get the value from the input field
+        let inputValue = parseInt(numberInput.value);
+
+        // Calculate the new sum
+        let newSum = currentSum + inputValue;
+
+        // Update the sum displayed in the span
+        sumOutput.innerText = newSum;
+    });
 
 
 </script>
 
 </body>
-</html>

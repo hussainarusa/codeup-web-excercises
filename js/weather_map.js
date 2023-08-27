@@ -16,9 +16,9 @@ $(() => {
     function getWeatherData(location) {
         let queryParams;
         if (typeof location === 'string') {
-            queryParams = { q: location, appid: apiKey, units: 'imperial' };
+            queryParams = {q: location, appid: apiKey, units: 'imperial'};
         } else if (typeof location === 'object') {
-            queryParams = { lat: location.latitude, lon: location.longitude, appid: apiKey, units: 'imperial' };
+            queryParams = {lat: location.latitude, lon: location.longitude, appid: apiKey, units: 'imperial'};
         } else {
             console.error('Invalid location format');
             return;
@@ -49,6 +49,7 @@ $(() => {
             },
         });
     }
+
 // The function to display today's forecast card
     function displayTodayForecast(todayForecastData) {
         $('#today-forecast-card').empty();
@@ -68,6 +69,7 @@ $(() => {
         </div>
     `);
     }
+
     function displayWeatherData(data) {
         const city = data.name;
         const country = data.sys.country;
@@ -105,15 +107,18 @@ $(() => {
             const averageWindSpeed = totalWindSpeed / dateForecastData.length;
 
             const parsedDate = new Date(date);
-            const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(parsedDate);
-            const dateWithoutYear = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' }).format(parsedDate);
+            const dayOfWeek = new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(parsedDate);
+            const dateWithoutYear = new Intl.DateTimeFormat('en-US', {
+                month: 'short',
+                day: 'numeric'
+            }).format(parsedDate);
 
             const description = dateForecastData[0].weather[0].description;
 
             $('#forecast-card-container').append(`
         <div class="card">
           <h1 class="weatherDate carti">${dayOfWeek} - ${dateWithoutYear}</h1>
-          <p class="carti temp"> H:${averageMinTemperature.toFixed(2)} °F / L:${averageMaxTemperature.toFixed(2)} °F</p>
+          <p class="carti temp"> H:${averageMaxTemperature.toFixed(2)} °F / L:${averageMinTemperature.toFixed(2)} °F</p>
           <p class="carti">Humidity: ${averageHumidity.toFixed(2)} %</p>
           <p class="carti">Wind Speed: ${averageWindSpeed.toFixed(1)} m/s</p>
           <p class="carti"> ${description}</p>
@@ -126,7 +131,7 @@ $(() => {
     map.on('click', function (e) {
         const latitude = e.lngLat.lat;
         const longitude = e.lngLat.lng;
-        getWeatherData({ latitude, longitude });
+        getWeatherData({latitude, longitude});
     });
 
     // FUNCTIONS
@@ -143,16 +148,13 @@ $(() => {
         return new mapboxgl.Map(mapOptions);
     }
 
-
-
-      // Function to load weather data for San Antonio, Texas when the page is ready
-      function loadDefaultWeather() {
+    // Function to load weather data for San Antonio, Texas when the page is ready
+    function loadDefaultWeather() {
         const defaultLocation = "San Antonio, Texas";
         getWeatherData(defaultLocation);
-      }
+    }
 
-      // Call the function to load default weather when the page is ready
-      loadDefaultWeather();
-
+    // Call the function to load default weather when the page is ready
+    loadDefaultWeather();
 
 });
